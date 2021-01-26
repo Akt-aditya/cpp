@@ -110,3 +110,8 @@ body{
     background-color: #03A9F4;
   }
 }
+
+#preloader{
+  color: red;
+  animation: anime 500ms ease-in-out;
+}

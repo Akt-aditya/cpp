@@ -45,5 +45,8 @@ const cl = () => {
   r.innerText = "";
 }
 
-
+const preloader = () => {
+  let pre=document.querySelector("#preloader");
+  pre.style.display="none";
+}
 
