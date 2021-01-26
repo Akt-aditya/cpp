@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <div id="result">
+    
+  </div>
+  <div class="operators">
+  <div class="container">
+    <button class="item item1" onclick="render(1)">1</button>
+     <button class="item item2" onclick="render(2)">2</button>
+     <button class="item item3" onclick="render(3)">3</button>
+      <button class="item item4"onclick="render(4)">4</button>
+     <button class="item item5" onclick="render(5)">5</button>  
+     <button class="item item6" onclick="render(6)">6</button>
+  
+      <button class="item item7" onclick="render(7)">7</button>
+   <button class="item item8" onclick="render(8)">8</button>
+    <button class="item item9" onclick="render(9)">9</button>
+    <button class="item item0" onclick="render(0)">0</button>
+    <button class="item" onclick="render(89)">.</button>
+    
+  </div>
+  <div class="oprat">
+     <button class="item itemadd"onclick="d()">+</button>
+     <button class="item itemsub" onclick="sd()">-</button>
+     <button class="item itemmul" onclick="md()">X</button>
+     <button class="item itemdiv" onclick="dd()">/</button>
+     <button class="item itemequal" onclick="equal()">=</button>
+     <button class="item itemclr" onclick="cl()">CLR</button>
+  </div>
+  <div class="history" id="history">
+    <h1>History</h1>
+  </div>
+  </div>
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script
+</body>
+</html>

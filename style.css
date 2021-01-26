@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+ font-size: 25px;
+}
+body{
+  height: 710px;
+  overflow: hidden;
+}
+.calculator{
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 100%;
+  object-fit: contain !important;
+  background-color: burlywood;
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: scroll;
+  animation: anime 5s;
+  animation-iteration-count: infinite;
+}
+.operators{
+  display: flex;
+  height: 100%;
+  object-fit: cover;
+}
+.container{
+  display: grid;
+  grid-template-rows: 90px 90px 90px 100px;
+  grid-template-columns: 90px 90px 90px ;  
+  width: 50vw;
+  height: 100%;
+  grid-gap: 30px;
+  margin: 0px;
+  padding: 10px;
+}
+#result{
+  text-align: center;
+  margin: 0;
+  padding-top: 80px;
+  font-size: 100px !important;
+  font-weight: bolder;
+  height:250px;
+  width: 100%;
+  color: yellow;
+  letter-spacing: 5px;
+}
+.oprat{
+  display:grid; 
+  grid-template-columns:130px 130px; 
+  grid-template-rows:100px 100px 100px;
+}
+.item{
+ text-align: center;
+ padding: 10px;
+ height:80px;
+ width:80px;
+ border: 1px solid aqua;
+ margin: 0;
+
+}
+.item:hover,.item:focus{
+  animation : ani 2.5s;
+}
+.history{
+  text-align: center;
+  color: goldenrod;
+}
+.history h1{
+  text-align: center;
+}
+@keyframes ani{
+  from{
+    background-color: white;
+  }
+  25%{
+     box-shadow: 4px 4px burlywood;
+  }
+  40%{
+     box-shadow: 7px 7px #E53935;
+  }
+  50%{
+    background-color: pink;
+    box-shadow: 10px 10px #03A9F4;
+  }
+  75%{
+    box-shadow: 4px 4px burlywood;
+  }
+  to{
+    background-color: palegreen;
+  }
+}
+
+@keyframes anime{
+  from{
+    background-color: #03A9F4;
+  }
+  25%{
+    background-color: #E53935;
+  }
+  50%{
+    background-color: #E91E63;
+  }
+  75%{
+    background-color: #00FF66;
+  }
+  to{
+    background-color: #03A9F4;
+  }
+}
